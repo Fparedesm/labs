@@ -53,6 +53,40 @@ Como se puede ver en la imagen el escaneo contiene los parametros de -sV para de
 
 Como se puede apreciar en la foto el escaneo fue un exito.
 
+y se detectaron las siguientes CVE
 
+<img src="images/5vulnerabilidades.png" alt="vulnerabilidades">
+
+Se detecto el CVE CVE-2013-4124 este afecta a las versiones antiguas de samba el impacto principal que podria tener esta vulnerabilidad es un posible ataque de denegacion de servicios. El atacante podria enviar paquetes SMB manipulados para ocasionar el ataque de denegacion de servicio sobreexigiendo el uso de memoria en el sistema
+
+<img src="images/4vulnerabilidades.png" alt="vulnerabilidades">
+
+Tambien se encontro el CVE-2007-6750 el cual afecta a versiones antiguas de apache http server. Esta vulnerabilidad puede traer ataques de denegacion de servicio conocido como slowloris. Con esta vulnerabilidad el atacante puede ser capaz de enviar multiples peticiones http y consumir los recursos del servidor apache para que este servicio tarde o directamente no pueda responder.
+
+<img src="images/3vulnerabilidades.png" alt="vulnerabilidades">
+
+El otro CVE encontrado es el CVE-2015-3306 esta vulnerabilidad afecta a versiones ProFTPD. La vulnerabilidad permite a los atacantes remotos abusen de comandos SITE CPFR o SITE  CPTO con el objetivo de leer o escribir archivos dentro del sistema, ocasionando un impacto de acceso no autorizado a informacion sensible.
+
+A continuacion se aplicaran los parches a cada servicio.
+
+<img src="images/6parches.png" alt="parches">
+
+<img src="images/7parches.png" alt="parches">
+
+<img src="images/8parches.png" alt="parches">
+
+Luego de esto se configuran las actualizaciones automaticas de seguridad con el siguiente comando.
+
+<img src="images/9unattended-upgrades.png" alt="actualizaciones">
+
+Con este comando se automatiza la descarga e instalacion de actualizaciones de seguridad en el sistema.
+
+Ahora se configurara el archivo de unattended upgrades el cual define las reglas de que actualizaciones seran llevadas a cabo automaticamente en el sistema.
+
+<img src="images/10configuracion.png" alt="configuracion">
+
+Dentro del archivo se hace la siguiente modificacion con el objetivo de instalar solo actualizaciones de seguridad.
+
+<img src="images/11configuracion.png" alt="configuracion">
 
 
