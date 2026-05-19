@@ -25,11 +25,11 @@ Habilidad ganada: Dominio de sistemas de detección de intrusos y respuesta auto
 
 ¿QUE SE HARA?
 
-Se implementara un ids como fail2ban para poder monitorear y detectar actividades sospechosas como intentos de acceso no autorizados al servicio ssh. fail2ban sera configurado para bloquear direcciones IP que realicen multiples intentos fallidos de autenticacion.
+Se implementara un ids como fail2ban para poder monitorear y detectar actividades sospechosas como intentos de acceso no autorizados al servicio ssh. fail2ban será configurado para bloquear direcciones IP que realicen múltiples intentos fallidos de autenticación.
 
 LO QUE SE VERA 
 
-Ataque de fuerza bruta desde kali con hydra, instalacion y configuracion de fail2ban, monitoreo con fail2ban y bloqueo de ip a la maquina atacante.
+Ataque de fuerza bruta desde kali con hydra, instalación y configuración de fail2ban, monitoreo con fail2ban y bloqueo de ip a la maquina atacante.
 
 FINALIDAD
 
@@ -61,15 +61,15 @@ Luego de esto instalamos fail2ban.
 
 <img src="images/5.png" alt="verificacion">
 
-ahora se creara un archivo de configuracion con el objetivo de configurar como operara fail2ban
+ahora se creara un archivo de configuración con el objetivo de configurar como operara fail2ban
 
 <img src="images/6.png" alt="Configuracion">
 
 <img src="images/7configuracion.png" alt="Configuracion">
 
-el bantime es el tiempo de bloqueo de la ip, findtime el tiempo en el cual se contabilizan intentos y el maxretry quiere decir el maximo numero de intentos fallidos al que se puede llegar. 
+el bantime es el tiempo de bloqueo de la ip, findtime el tiempo en el cual se contabilizan intentos y el maxretry quiere decir el máximo numero de intentos fallidos al que se puede llegar. 
 
-Con esta configuracion se reinicia el servicio y vamos a la maquina atacante.
+Con esta configuración se reinicia el servicio y vamos a la maquina atacante.
 
 <img src="images/8ataque.png" alt="ataque">
 
@@ -87,10 +87,10 @@ Para asegurarnos de que la maquina fue baneada en ubuntu server ingresamos el si
 
 <img src="images/10verificacion-baneo.png" alt="verificacion">
 
-Si intentamos realizar nuevamente el ataque con hydra la conexion sera rechazada.
+Si intentamos realizar nuevamente el ataque con hydra la conexión será rechazada.
 
 <img src="images/12intentofallido.png" alt="intento fallido">
 
-Tambien si intentamos ingresar directamente con ssh no se nos permitira.
+También si intentamos ingresar directamente con ssh no se nos permitirá.
 
 <img src="images/13intento-entrada-ssh.png" alt="intento de entrada">
