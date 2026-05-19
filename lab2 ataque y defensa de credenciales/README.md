@@ -1,4 +1,4 @@
-Lab 2: Ataque y Defensa de Credenciales (Habilidad: Gestión de contraseñas)
+<h1>Lab 2: Ataque y Defensa de Credenciales (Habilidad: Gestión de contraseñas)</h1>
 
 Actividad: Realizar ataques de diccionario y fuerza bruta, para luego implementar MFA.
 Herramientas: Hydra, John the Ripper, Google Authenticator PAM module.
@@ -14,7 +14,9 @@ Ejecutar google-authenticator y configurar la App en el celular.
 Configuración de SSH: Modificar /etc/pam.d/sshd y /etc/ssh/sshd_config para exigir tanto la contraseña como el token (MFA).
 Prueba Final: Volver a intentar el ataque con Hydra. Aunque Hydra encuentre la contraseña, la conexión fallará porque no puede saltarse el segundo factor.
 
-HERRAMIENTAS
+---
+
+<h1>HERRAMIENTAS</h1>
 
 Ubuntu server victima
 
@@ -26,11 +28,15 @@ Google Authenticator
 
 ssh
 
-¿QUE SE HARA?
+---
+
+<h1>¿QUE SE HARA?</h1>
 
 Se va a realizar un ataque desde una maquina atacante con la herramienta hydra contra el servicio ssh de la maquina victima. Luego del ataque (el cual será exitoso) para mejorar la seguridad de la maquina victima se implementara un MFA con google authenticator. Luego de la implementación se realizara nuevamente el ataque con hydra para verificar los cambios y si el MFA fue configurado con éxito.
 
-¿QUE SE VERA?
+---
+
+<h1>¿QUE SE VERA?</h1>
 
 -Ejecución de la herramienta hydra con un ataque el cual utiliza un diccionario
 
@@ -40,11 +46,13 @@ Se va a realizar un ataque desde una maquina atacante con la herramienta hydra c
 
 -Intento de acceso una vez el MFA es activado
 
-FINALIDAD
+<h1>FINALIDAD</h1>
 
 Este laboratorio se realiza con la finalidad de ver como funcionan los ataques contra servicios como ssh y también para entender la importancia de las herramientas que brindan MFA como segunda capa de seguridad, lo que puede evitar el acceso incluso si la contraseña ha sido descubierta.
 
-DESARROLLO DEL LABORATORIO
+---
+
+<h1>DESARROLLO DEL LABORATORIO</h1>
 
 Primero se realiza el ataque a la maquina victima con hydra para obtener las credenciales
 
