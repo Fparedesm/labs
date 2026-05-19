@@ -139,5 +139,7 @@ Con estas configuraciones ya realizadas se puede ingresar al sitio mediante http
 
 <img src="images/27.png" alt="ingreso">
 
+Como se puede ver ahora es imposible interceptar datos sensibles.
+
 Con este sitio que ya contiene una protección tls ingresamos las credenciales y abrimos wireshark para interceptarlas
 <img src="images/22wireshark.png" alt="wireshark">
