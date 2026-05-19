@@ -1,4 +1,4 @@
-Lab 2. implementación de IDS con Snort o Fail2Ban (Habilidad: Aplicar IDS)
+<h1>Lab 2. implementación de IDS con Snort o Fail2Ban (Habilidad: Aplicar IDS)</h1>
 
 Entorno: Ubuntu Server (Víctima) y Kali (Atacante).
 Actividad: Configurar un sistema de detección y respuesta automática.
@@ -23,19 +23,27 @@ Verificación de Defensa: Ver cómo la IP de Kali es baneada automáticamente en
 sudo iptables -L -n
 Habilidad ganada: Dominio de sistemas de detección de intrusos y respuesta automática ante incidentes.
 
-¿QUE SE HARA?
+---
+
+<h1>¿QUE SE HARA?</h1>
 
 Se implementara un ids como fail2ban para poder monitorear y detectar actividades sospechosas como intentos de acceso no autorizados al servicio ssh. fail2ban será configurado para bloquear direcciones IP que realicen múltiples intentos fallidos de autenticación.
 
-LO QUE SE VERA 
+---
+
+<h1>LO QUE SE VERA</h1> 
 
 Ataque de fuerza bruta desde kali con hydra, instalación y configuración de fail2ban, monitoreo con fail2ban y bloqueo de ip a la maquina atacante.
 
-FINALIDAD
+---
+
+<h1>FINALIDAD</h1>
 
 Implementar y configurar un IDS como fail2ban de manera exitosa para que este cumpla con el objetivo de añadir una capa de seguridad al entorno.
 
-HERRAMIENTAS
+---
+
+<h1>HERRAMIENTAS</h1>
 
 -ubuntu server
 
@@ -46,6 +54,10 @@ HERRAMIENTAS
 -ssh
 
 -fail2ban
+
+---
+
+<h1>DESARROLLO</h1>
 
 Comenzamos con el laboratorio instalando el e inicializando el servicio ssh en la maquina ubuntu server.
 
