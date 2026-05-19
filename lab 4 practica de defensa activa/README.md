@@ -1,4 +1,4 @@
-Lab 1. Practica de defensa activa
+<h1>Lab 1. Practica de defensa activa</h1>
 
 Gestión de Parches y Hardening (Habilidad: Implementar parches)
 Entorno: Ubuntu Server desactualizado.
@@ -20,21 +20,29 @@ sudo apt install unattended-upgrades
 Configurar /etc/apt/apt.conf.d/50unattended-upgrades para que solo se instalen parches de "Security".
 Habilidad ganada: Capacidad de priorizar la remediación basada en el impacto organizacional.
 
-¿QUE SE VA HACER?
+---
+
+<h1>¿QUE SE VA HACER?</h1>
 
 Se utilizara una maquina ubuntu server desactualizada con el objetivo de identificar las vulnerabilidades que esta presenta, para posteriormente realizar una remediación aplicando parches de seguridad.
 
 También se investigaran al menos 3 CVE detectados en la maquina victima con la pagina nvd para poder verificar cuales son los peligros que este representa para el sistema.
 
-LO QUE SE VERA
+---
+
+<h1>LO QUE SE VERA</h1>
 
 Se lograran observar múltiples servicios y sus vulnerabilidades, también se podrá observar un escaneo de vulnerabilidades por parte de la maquina atacante la cual es una kali linux, esta hará el escaneo con nmap, configuraciones para el proceso de remediación en el sistema mediante aplicación de parches o actualizaciones.
 
-FINALIDAD
+---
+
+<h1>FINALIDAD</h1>
 
 Aprender acerca de la importancia sobre como funciona el proceso de remediación o fortalecimiento de un equipo para evitar posibles ataques inminentes, estas medidas son importantes para disminuir los riesgos de seguridad y mantener el equipo (ubuntu server) actualizado al día.
 
-HERRAMIENTAS
+---
+
+<h1>HERRAMIENTAS</h1>
 
 -Ubuntu server
 
@@ -44,7 +52,9 @@ HERRAMIENTAS
 
 -nvd
 
-DESARROLLO
+---
+
+<h1>DESARROLLO</h1>
 
 Primero comenzamos haciendo un escaneo con la maquina atacante kali linux hacia la maquina victima desactualizada (ubuntu server) 
 <img src="images/1escaneo.png" alt="escaneo">
