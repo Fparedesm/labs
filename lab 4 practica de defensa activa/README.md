@@ -36,7 +36,7 @@ Aprender acerca de la importancia sobre como funciona el proceso de remediación
 
 HERRAMIENTAS
 
--Ubuntu server
+-Ubuntu server (metasploitable3)
 
 -Kali Linux
 
