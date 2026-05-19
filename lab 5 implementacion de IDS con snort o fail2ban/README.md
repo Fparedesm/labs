@@ -49,3 +49,48 @@ HERRAMIENTAS
 
 Comenzamos con el laboratorio instalando el e inicializando el servicio ssh en la maquina ubuntu server.
 
+<img src="images/1instalacionssh.png" alt="instalacion">
+
+<img src="images/2inicializacion.png" alt="inicializacion">
+
+<img src="images/3.png" alt="verificacion">
+
+Luego de esto instalamos fail2ban.
+
+<img src="images/4instalacion-fail2ban.png" alt="instalacion">
+
+<img src="images/5.png" alt="verificacion">
+
+ahora se creara un archivo de configuracion con el objetivo de configurar como operara fail2ban
+
+<img src="images/6.png" alt="Configuracion">
+
+<img src="images/7configuracion.png" alt="Configuracion">
+
+el bantime es el tiempo de bloqueo de la ip, findtime el tiempo en el cual se contabilizan intentos y el maxretry quiere decir el maximo numero de intentos fallidos al que se puede llegar. 
+
+Con esta configuracion se reinicia el servicio y vamos a la maquina atacante.
+
+<img src="images/8ataque.png" alt="ataque">
+
+Como se logra observar en la imagen se tiene preparado un ataque de fuerza bruta con hydra.
+
+Antes de iniciar el ataque en la maquina victima se inicio el monitoreo con el siguiente comando
+
+<img src="images/9monitoreo-bloqueo.png" alt="monitoreo">
+
+Como se puede ver con el monitoreo se logra ver los intentos de la maquina atacante y como esta es finalmente baneada. La ip de la maquina atacante es la siguiente:
+
+<img src="images/11ipatacante.png" alt="ip maquina atacante">
+
+Para asegurarnos de que la maquina fue baneada en ubuntu server ingresamos el siguiente comando
+
+<img src="images/10verificacion-baneo.png" alt="verificacion">
+
+Si intentamos realizar nuevamente el ataque con hydra la conexion sera rechazada.
+
+<img src="images/12intentofallido.png" alt="intento fallido">
+
+Tambien si intentamos ingresar directamente con ssh no se nos permitira.
+
+<img src="images/13intento-entrada-ssh.png" alt="intento de entrada">
