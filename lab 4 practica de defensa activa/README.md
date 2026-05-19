@@ -85,3 +85,7 @@ Ahora se configurara el archivo de unattended upgrades el cual define las reglas
 
 <img src="images/10configuracion.png" alt="configuracion">
 
+Con esta configuracion se autorizan actualizaciones automaticas que traten solo acerca de la seguridad.
+
+<img src="images/11configuracion.png" alt="configuracion">
+
