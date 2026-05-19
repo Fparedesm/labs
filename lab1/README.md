@@ -1,4 +1,4 @@
-Laboratorios Prácticos (Entorno Kali / Ubuntu)
+<h1>Laboratorios Prácticos (Entorno Kali / Ubuntu)</h1>
 
 Entorno: Ubuntu Server (Víctima/Servidor) y Kali (Auditor).
 
@@ -17,13 +17,17 @@ Generar llave privada: openssl genrsa -out privada.pem 2048
 Generar llave pública: openssl rsa -in privada.pem -pubout -out publica.pem
 Firmar archivo: openssl dgst -sha256 -sign privada.pem -out firma.bin config_bancaria.txt
 
-¿QUE SE HARA?
+---
+
+<h1>¿QUE SE HARA?</h1>
 
 Se creara un archivo que simula una cuenta bancaria este archivo será encriptado con sha256. Luego de esto se simulara un ataque dentro del archivo añadiendo un carácter luego de esto se volverá a encriptar el archivo modificado para ver si es que el hash sufre algun cambio.
 
 También se realizara la creación llaves publicas y privadas y luego se firmara el archivo.
 
-¿QUE SE VERA?
+---
+
+<h1>¿QUE SE VERA?</h1>
 
 -Una vez el archivo sea modificado se podrá observar un cambio notable en el hash.
 
@@ -31,15 +35,21 @@ También se realizara la creación llaves publicas y privadas y luego se firmara
 
 -Se podrá observar que un archivo el cual sea modificado no podrá pasar a la firma.
 
-LA FINALIDAD DE ESTE LABORATORIO
+---
+
+<h1>LA FINALIDAD DE ESTE LABORATORIO</h1>
 
 Entender como funciona los mecanismos de encriptación o criptográficos mediante el uso de sha256 el cual es una función criptográfica, la finalidad también incluye obtener una comprensión acerca de las firmas digitales tanto publica como privada, esto con el fin de garantizar que la información no ha sido alterada y si lo fue enterarse de forma inmediata.
 
-Herramientas
+---
+
+<h1>Herramientas</h1>
 
 -Ubuntu server
 -sha256
 -ssl
+
+---
 
 DESARROLLO DEL LABORATORIO
 
