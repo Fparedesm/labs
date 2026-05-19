@@ -36,7 +36,7 @@ Aprender acerca de la importancia sobre como funciona el proceso de remediación
 
 HERRAMIENTAS
 
--Ubuntu server (metasploitable3)
+-Ubuntu server
 
 -Kali Linux
 
@@ -67,7 +67,7 @@ También se encontró el CVE-2007-6750 el cual afecta a versiones antiguas de ap
 
 El otro CVE encontrado es el CVE-2015-3306 esta vulnerabilidad afecta a versiones ProFTPD. La vulnerabilidad permite a los atacantes remotos abusen de comandos SITE CPFR o SITE  CPTO con el objetivo de leer o escribir archivos dentro del sistema, ocasionando un impacto de acceso no autorizado a información sensible.
 
-A continuacion se aplicaran los parches a cada servicio.
+A continuación se aplicaran los parches a cada servicio.
 
 <img src="images/6parches.png" alt="parches">
 
@@ -84,9 +84,4 @@ Con este comando se automatiza la descarga e instalación de actualizaciones de 
 Ahora se configurara el archivo de unattended upgrades el cual define las reglas de que actualizaciones serán llevadas a cabo automáticamente en el sistema.
 
 <img src="images/10configuracion.png" alt="configuracion">
-
-Dentro del archivo se hace la siguiente modificacion con el objetivo de instalar solo actualizaciones de seguridad.
-
-<img src="images/11configuracion.png" alt="configuracion">
-
 
